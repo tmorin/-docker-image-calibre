@@ -1,0 +1,20 @@
+language: generic
+arch:
+  - amd64
+  - arm64
+services:
+  - docker
+env:
+  global:
+    - calibre_version="3.46.0"
+    - prefix_version="+dfsg-1"
+    - tag_image="thibaultmorin/calibre"
+    - tag_version="$calibre_version-$TRAVIS_CPU_ARCH"
+    - tag="$tag_image:$tag_version"
+before_install: ./scripts/before_install.sh
+script: ./scripts/build.sh
+jobs:
+  include:
+    - stage: manifest
+      script: ./scripts/manifest.sh
+
