@@ -7,7 +7,6 @@ RUN apt-get update -y \
   && apt-get clean \
   && rm -rf /var/cache/apt/* /var/lib/apt/lists/* \
   && mkdir /workdir
-COPY rootfs /
 WORKDIR /workdir
-CMD []
-ENTRYPOINT ["/entrypoint.sh"]
+VOLUME /workdir
+CMD ["/bin/bash"]

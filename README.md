@@ -7,7 +7,7 @@ Provide a Docker image running [kovidgoyal/calibre](https://github.com/kovidgoya
 ## Usage
 
 ```bash
-docker run --rm thibaultmorin/calibre --version
+docker run --rm thibaultmorin/calibre calibre-server --version
 ```
 
 ```bash
