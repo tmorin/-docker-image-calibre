@@ -17,5 +17,6 @@ script: ./scripts/build.sh
 jobs:
   include:
     - stage: manifest
-      script: ./scripts/manifest.sh
-
+      script:
+        - ./scripts/manifest.sh
+        - curl --data "" https://hooks.microbadger.com/images/thibaultmorin/calibre/Tl31at9a068c5IK_D7ik8w7XwO4=
