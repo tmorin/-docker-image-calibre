@@ -8,7 +8,7 @@ env:
   global:
     - calibre_version="3.46.0"
     - prefix_version="+dfsg-1"
-    - vcf_ref="$TRAVIS_COMMIT"
+    - vcs_ref="$TRAVIS_COMMIT"
     - tag_image="thibaultmorin/calibre"
     - tag_version="$calibre_version-$TRAVIS_CPU_ARCH"
     - tag="$tag_image:$tag_version"
