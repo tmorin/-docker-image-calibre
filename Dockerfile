@@ -1,8 +1,8 @@
-FROM ubuntu:eoan
-ARG version="3.46.0"
-ARG prefix="+dfsg-1"
-ARG vcs_ref
-ARG build_date
+FROM ubuntu:focal
+ARG version="4.99.4"
+ARG prefix="+dfsg+really4.12.0-1build1"
+ARG vcs_ref=""
+ARG build_date=""
 LABEL org.label-schema.schema-version="1.0" \
       org.label-schema.vendor=tmorin \
       org.label-schema.license=MIT \
